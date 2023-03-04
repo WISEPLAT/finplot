@@ -1,3 +1,8 @@
+# Removed sanctions Russia and Belarus 👊
+**requirements.txt**
+
+  finplot @ git+https://github.com/wiseplat/finplot.git@acfa98227508e9d6ac788337ec382654638b79a0
+
 # Finance Plot
 
 Finance Plotter, or finplot, is a performant library with a clean api to help you with your backtesting. It's
