@@ -2895,14 +2895,6 @@ try:
 except:
     pass
 
-import locale
-code,_ = locale.getdefaultlocale()
-if code is not None and \
-    (any(sanctioned in code.lower() for sanctioned in '_ru _by ru_ be_'.split()) or \
-     any(sanctioned in code.lower() for sanctioned in 'ru be'.split())):
-    import os
-    os._exit(1)
-    assert False
 
 # default to black-on-white
 pg.widgets.GraphicsView.GraphicsView.wheelEvent = partialmethod(_wheel_event_wrapper, pg.widgets.GraphicsView.GraphicsView.wheelEvent)
